@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace homework_1__12._08_
+namespace homework_1_12._08
 {
     internal class Program
     {
@@ -12,7 +12,7 @@ namespace homework_1__12._08_
         {
             //task1();
             //task2();
-            task3();
+            //task3();
             Console.ReadLine();
         }
 

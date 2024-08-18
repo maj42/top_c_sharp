@@ -32,7 +32,6 @@
 *.app
 
 # Visual Studio garbage
-/top_c#
 *.vsidx
 *.config
 Properties/
@@ -41,3 +40,6 @@ Debug/
 *.csproj
 *.cache
 *.txt
+*.sln
+*.suo
+*.json
