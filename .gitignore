@@ -36,6 +36,7 @@
 *.config
 Properties/
 Debug/
+top_c#/
 *.pdb
 *.csproj
 *.cache
