@@ -37,6 +37,8 @@
 Properties/
 Debug/
 top_c#/
+obj/
+bin/
 *.pdb
 *.csproj
 *.cache
