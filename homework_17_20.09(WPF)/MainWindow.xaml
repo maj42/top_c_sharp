@@ -1,0 +1,109 @@
+﻿<Window x:Class="homework_17_20._09_WPF_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:homework_17_20._09_WPF_"
+        x:Name="window"
+        mc:Ignorable="d" FontSize="28" FontFamily="Segoe UI"
+        Title="Calculator" Height="600" Width="500">
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="CalcButtons">
+                <Setter Property="Button.MinHeight" Value="30"/>
+                <Setter Property="Button.MinWidth" Value="30"/>
+                <Setter Property="Button.Margin" Value="3"/>
+            </Style>
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" /> 
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="55" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="resultField" Grid.Column="0"
+                 Grid.Row="0" Grid.ColumnSpan="4" Margin="3 5"
+                 FontSize="18" Padding="10 0" Foreground="Gray"
+                 TextAlignment="Right" 
+                 Text="{Binding Result, ElementName=window, Mode=OneWay}"
+                 IsReadOnly="True"/>
+        <TextBox x:Name="currentField" Grid.Column="0"
+                 Grid.Row="1" Grid.ColumnSpan="4" Margin="3 5" 
+                 FontSize="30" FontWeight="Bold" Padding="10 0" 
+                 TextAlignment="Right"
+                 Text="{Binding Current, ElementName=window, Mode=OneWay}" 
+                 IsReadOnly="True"/>
+        <!--1st Row-->
+        <Button x:Name="buttCE" Style="{StaticResource CalcButtons}"
+                Content="CE" Grid.Column="0" Grid.Row="2"
+                Click="buttCE_Click"/>
+        <Button x:Name="buttC" Style="{StaticResource CalcButtons}"
+                Content="C" Grid.Column="1" Grid.Row="2"
+                Click="buttC_Click"/>
+        <Button x:Name="buttDel" Style="{StaticResource CalcButtons}"
+                Content="&lt;" Grid.Column="2" Grid.Row="2"
+                Click="buttDel_Click"/>
+        <Button x:Name="buttDiv" Style="{StaticResource CalcButtons}"
+                Content="/" Grid.Column="3" Grid.Row="2"
+                Click="buttDiv_Click"/>
+        <!--2nd Row-->
+        <Button x:Name="butt7" Style="{StaticResource CalcButtons}"
+                Content="7" Grid.Column="0" Grid.Row="3"
+                Click="butt7_Click"/>
+        <Button x:Name="butt8" Style="{StaticResource CalcButtons}"
+                Content="8" Grid.Column="1" Grid.Row="3"
+                Click="butt8_Click"/>
+        <Button x:Name="butt9" Style="{StaticResource CalcButtons}"
+                Content="9" Grid.Column="2" Grid.Row="3"
+                Click="butt9_Click"/>
+        <Button x:Name="buttMult" Style="{StaticResource CalcButtons}"
+                Content="*" Grid.Column="3" Grid.Row="3"
+                Click="buttMult_Click"/>
+        <!--3rd Row-->
+        <Button x:Name="butt4" Style="{StaticResource CalcButtons}"
+                Content="4" Grid.Column="0" Grid.Row="4"
+                Click="butt4_Click"/>
+        <Button x:Name="butt5" Style="{StaticResource CalcButtons}"
+                Content="5" Grid.Column="1" Grid.Row="4"
+                Click="butt5_Click"/>
+        <Button x:Name="butt6" Style="{StaticResource CalcButtons}"
+                Content="6" Grid.Column="2" Grid.Row="4"
+                Click="butt6_Click"/>
+        <Button x:Name="buttMin" Style="{StaticResource CalcButtons}"
+                Content="-" Grid.Column="3" Grid.Row="4"
+                Click="buttMin_Click"/>
+        <!--4th Row-->
+        <Button x:Name="butt1" Style="{StaticResource CalcButtons}"
+                Content="1" Grid.Column="0" Grid.Row="5"
+                Click="butt1_Click"/>
+        <Button x:Name="butt2" Style="{StaticResource CalcButtons}"
+                Content="2" Grid.Column="1" Grid.Row="5"
+                Click="butt2_Click"/>
+        <Button x:Name="butt3" Style="{StaticResource CalcButtons}"
+                Content="3" Grid.Column="2" Grid.Row="5"
+                Click="butt3_Click"/>
+        <Button x:Name="buttPlus" Style="{StaticResource CalcButtons}"
+                Content="+" Grid.Column="3" Grid.Row="5"
+                Click="buttPlus_Click"/>
+        <!--5th Row-->
+        <Button x:Name="buttDot" Style="{StaticResource CalcButtons}"
+                Content="." Grid.Column="0" Grid.Row="6"
+                Click="buttDot_Click"/>
+        <Button x:Name="butt0" Style="{StaticResource CalcButtons}"
+                Content="0" Grid.Column="1" Grid.Row="6"
+                Click="butt0_Click"/>
+        <Button x:Name="buttEq" Style="{StaticResource CalcButtons}"
+                Content="=" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2"
+                Click="buttEq_Click"/>
+        <WrapPanel/>
+    </Grid>
+</Window>

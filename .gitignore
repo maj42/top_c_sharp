@@ -46,3 +46,10 @@ bin/
 *.sln
 *.suo
 *.json
+
+# WPF garbage
+App.xaml
+App.xaml.cs
+AssemblyInfo.cs
+*.csproj
+*.csproj.user
