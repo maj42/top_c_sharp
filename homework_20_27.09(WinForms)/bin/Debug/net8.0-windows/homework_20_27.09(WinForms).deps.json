@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "homework_20_27.09(WinForms)/1.0.0": {
+        "runtime": {
+          "homework_20_27.09(WinForms).dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "homework_20_27.09(WinForms)/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
