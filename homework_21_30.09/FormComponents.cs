@@ -3,12 +3,10 @@
     public partial class FormComponents : Form
     {
         BindingSource binding;
-        public List<Form1.Component> listComponents;
-        public FormComponents(List<Form1.Component> listComponents, BindingSource binding)
+        public FormComponents(BindingSource binding)
         {
             InitializeComponent();
             this.binding = binding;
-            this.listComponents = listComponents;
         }
 
         private void FormComponents_Load(object sender, EventArgs e)

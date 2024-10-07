@@ -60,7 +60,7 @@ namespace homework_21_30._09
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            FormComponents formComponents = new FormComponents(availableComponents, bindingAvailable);
+            FormComponents formComponents = new FormComponents(bindingAvailable);
             formComponents.listBox1.DataSource = availableComponents;
             formComponents.listBox1.DisplayMember = "Name";
             formComponents.ShowDialog();
